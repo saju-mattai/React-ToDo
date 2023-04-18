@@ -1,38 +1,129 @@
-.App {
+body{
+  background-color:white;
+  margin: 0;
+  padding: 5px;
+}
+
+h1{
+  margin: 0px;
+  margin-bottom: 20px;
+}
+
+.todo-container{
+  width: 600px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.input-section{
+  background-color:  rgb(174, 117, 228);
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid silver;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.input-section input{
+  padding:10px;
+  width: 65%;
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.input-section button{
+  background-color:  rgb(174, 117, 228);
+  margin-left: 10px;
+  border: 0;
+  width: 35px;
+  height: 35px;
+}
+
+.input-section button i{
+  font-size: 20px;
+}
+
+ul li{
+  list-style: none;
+ 
+}
+
+.items{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 600px;
+  margin-top: 20px;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.added-item{
+  min-width:170px;
+  height: 300px;
+  background-color: white;
+  padding: 15px;
+  margin: 20px;border-radius: 5px;
+  border: 1px solid silver;
+  box-sizing: border-box;
+  box-shadow: 0 4px 6px black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pending{
+  background-color: rgb(228, 9, 9);
+}
+.completed-item{
+  min-width:170px;
+  height: 300px;
+  background-color: white;
+  padding: 15px;
+  margin: 20px;
+  margin: 20px;border-radius: 5px;
+  border: 1px solid silver;
+  box-sizing: border-box;
+  box-shadow: 0 4px 6px black;
+}
+
+.removed-item{
+  min-width:170px;
+  height: 300px;
+  background-color: white;
+  margin: 20px;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 5px;
+  border: 1px solid silver;
+  box-sizing: border-box;
+  box-shadow: 0 4px 6px  black;
+}
+
+
+.removed-item h2{
+  color:rgb(240, 71, 71)
+}
+
+.completed-item h2{
+  color:rgb(38, 202, 38)
+}
+
+.added-item h2{
+  color:rgb(227, 218, 82)
+}
+
+
+h2{
+  margin: 0;
+}
+
+ul{
+  text-align: left;
+  padding: 0;
+}
+
+i{
+  float: right;
+}
+
+span i{
+  margin-left: 10px;
 }
